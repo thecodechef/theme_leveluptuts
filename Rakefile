@@ -60,15 +60,24 @@ namespace :git do
 
   desc "Pushs Repository to GitHub"
   task :push do
-    system "git tag -a v#{@version.to_s}"
-    system "git push -u origin master --tags"
+    system "git push -u origin master"
+  end
+
+  namespace :tag do
+    desc "Pushs Repository to GitHub with Tags"
+    task :push do
+      system "git tag -a v#{@version.to_s}"
+      system "git push -u origin master --tags"
+    end
   end
 
   namespace :remote do
+    desc "Add a Remote Repository from GitHub"
     task :add do
       system "git remote add origin #{@repo}"
     end
 
+    desc "Removes Remote from Repository"
     task :remove do
       system "git remote remove origin"
     end
