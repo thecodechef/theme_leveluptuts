@@ -183,7 +183,7 @@
     {
       "class": "tab_label",
       "parents": [{"class": "tab_control","attributes": ["hover", "selected"]}],
-      "fg": [130,104,168]
+      "fg": [50,24,88]
     },
     {
       "class": "tab_label",
