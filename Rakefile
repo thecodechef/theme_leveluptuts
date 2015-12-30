@@ -43,6 +43,9 @@ namespace :git do
     puts "Created ./.gitaliases"
     sleep 0.2
     system "touch .gitignore"
+    system "echo \".gitconfig\" >> .gitignore"
+    system "echo \".gitaliases\" >> .gitignore"
+    system "echo \".DS_Store\" >> .gitignore"
     system "touch .gitconfig"
     system "touch .gitaliases"
   end
@@ -64,14 +67,17 @@ namespace :git do
   end
 
   namespace :tag do
+
     desc "Pushs Repository to GitHub with Tags"
     task :push do
       system "git tag -a v#{@version.to_s}"
       system "git push -u origin master --tags"
     end
+
   end
 
   namespace :remote do
+
     desc "Add a Remote Repository from GitHub"
     task :add do
       system "git remote add origin #{@repo}"
@@ -81,6 +87,7 @@ namespace :git do
     task :remove do
       system "git remote remove origin"
     end
+
   end
 
 end

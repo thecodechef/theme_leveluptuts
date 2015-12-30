@@ -436,7 +436,10 @@
             <key>name</key>
             <string>Markup: Emphasis</string>
             <key>scope</key>
-            <string>markup.italic, markup.italic.markdown</string>
+            <string>
+              , markup.italic,
+              , markup.italic.markdown,
+            </string>
             <key>settings</key>
             <dict>
               <key>fontStyle</key>
@@ -449,7 +452,10 @@
             <key>name</key>
             <string>Markup: StrongEmphasis</string>
             <key>scope</key>
-            <string>markup.bold_italic, markup.bold_italic.markdown</string>
+            <string>
+              , markup.bold_italic,
+              , markup.bold_italic.markdown,
+            </string>
             <key>settings</key>
             <dict>
               <key>fontStyle</key>
@@ -548,7 +554,9 @@
             <key>name</key>
             <string>Markdown: Images</string>
             <key>scope</key>
-            <string>text.html.markdown meta.paragraph.markdown meta.image.inline.markdown markup.underline.link.image.markdown</string>
+            <string>
+              , text.html.markdown meta.paragraph.markdown meta.image.inline.markdown markup.underline.link.image.markdown,
+            </string>
             <key>settings</key>
             <dict>
               <key>foreground</key>
@@ -591,7 +599,10 @@
             <key>name</key>
             <string>Markup: Output</string>
             <key>scope</key>
-            <string>markup.output, markup.raw</string>
+            <string>
+              , markup.output,
+              , markup.raw,
+            </string>
             <key>settings</key>
             <dict>
               <key>foreground</key>
@@ -603,7 +614,9 @@
             <key>name</key>
             <string>Markup: Prompt</string>
             <key>scope</key>
-            <string>markup.prompt</string>
+            <string>
+              , markup.prompt,
+            </string>
             <key>settings</key>
             <dict>
               <key>foreground</key>
@@ -632,7 +645,10 @@
             <key>name</key>
             <string>Markup: Strong</string>
             <key>scope</key>
-            <string>markup.bold, markup.bold.markdown</string>
+            <string>
+              , markup.bold,
+              , markup.bold.markdown
+            </string>
             <key>settings</key>
             <dict>
               <key>fontStyle</key>
@@ -701,7 +717,9 @@
             <key>name</key>
             <string>Markup: Keyboard Shortcut</string>
             <key>scope</key>
-            <string>markup.kbd.content.markdown</string>
+            <string>
+              , markup.kbd.content.markdown,
+            </string>
             <key>settings</key>
             <dict>
               <key>foreground</key>
@@ -713,7 +731,9 @@
             <key>name</key>
             <string>Markup: Traceback</string>
             <key>scope</key>
-            <string>markup.traceback</string>
+            <string>
+              , markup.traceback,
+            </string>
             <key>settings</key>
             <dict>
               <key>foreground</key>
@@ -725,7 +745,12 @@
             <key>name</key>
             <string>Markup: Underline</string>
             <key>scope</key>
-            <string>markup.underline,markup.underline.link.markdown,constant.other.reference.link.markdown,meta.image.reference.markdown</string>
+            <string>
+              , markup.underline,
+              , markup.underline.link.markdown,
+              , constant.other.reference.link.markdown,
+              , meta.image.reference.markdown,
+            </string>
             <key>settings</key>
             <dict>
               <key>foreground</key>
@@ -897,199 +922,260 @@
 
     <!-- Programming -->
       <!-- Python -->
-        <dict>
-          <key>name</key>
-          <string>Python: Punctuation (Brackets)</string>
-          <key>scope</key>
-          <string>
-            , source.python meta.function.python punctuation.section.function.begin.python,
-            , source.python meta.structure.dictionary.python punctuation.definition.dictionary.begin.python,
-            , source.python meta.structure.dictionary.python punctuation.definition.dictionary.end.python,
-            , source.python meta.structure.list.python punctuation.definition.list.begin.python,
-            , source.python meta.structure.list.python punctuation.definition.list.end.python,
-            , source.python meta.function-call.python punctuation.definition.arguments.begin.python,
-            , source.python meta.function-call.python punctuation.definition.arguments.end.python,
-          </string>
-          <key>settings</key>
+        <!-- Punctuation -->
           <dict>
-            <key>foreground</key>
-            <string>#ffffff</string>
+            <key>name</key>
+            <string>Python: Punctuation (Brackets)</string>
+            <key>scope</key>
+            <string>
+              , source.python meta.function.python punctuation.section.function.begin.python,
+              , source.python meta.structure.dictionary.python punctuation.definition.dictionary.begin.python,
+              , source.python meta.structure.dictionary.python punctuation.definition.dictionary.end.python,
+              , source.python meta.structure.list.python punctuation.definition.list.begin.python,
+              , source.python meta.structure.list.python punctuation.definition.list.end.python,
+              , source.python meta.function-call.python punctuation.definition.arguments.begin.python,
+              , source.python meta.function-call.python punctuation.definition.arguments.end.python,
+            </string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#ffffff</string>
+            </dict>
           </dict>
-        </dict>
-        <dict>
-          <key>name</key>
-          <string>Python: Escaped Characters</string>
-          <key>scope</key>
-          <string>
-            ,source.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.single-line.python constant.character.escape.linefeed.python,
-            ,source.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.single-line.python constant.character.escape.return.python,
-            ,source.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.single-line.python constant.character.escape.tab.python,
-          </string>
-          <key>settings</key>
+        <!-- Escaped Characters -->
           <dict>
-            <key>foreground</key>
-            <string>#ffec90</string>
+            <key>name</key>
+            <string>Python: Escaped Characters</string>
+            <key>scope</key>
+            <string>
+              ,source.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.single-line.python constant.character.escape.linefeed.python,
+              ,source.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.single-line.python constant.character.escape.return.python,
+              ,source.python meta.function-call.python meta.function-call.arguments.python string.quoted.single.single-line.python constant.character.escape.tab.python,
+            </string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#ffec90</string>
+            </dict>
           </dict>
-        </dict>
-        <dict>
-          <key>name</key>
-          <string>Python: Document Block</string>
-          <key>scope</key>
-          <string>
-            , source.python string.quoted.double.block.python,
-            , source.python string.quoted.double.block.python punctuation.definition.string.begin.python,
-            , source.python string.quoted.double.block.python punctuation.definition.string.end.python,
-          </string>
-          <key>settings</key>
+        <!-- Strings -->
           <dict>
-            <key>foreground</key>
-            <string>#64c8c8</string>
+            <key>name</key>
+            <string>Python: Document Block</string>
+            <key>scope</key>
+            <string>
+              , source.python string.quoted.double.block.python,
+              , source.python string.quoted.double.block.python punctuation.definition.string.begin.python,
+              , source.python string.quoted.double.block.python punctuation.definition.string.end.python,
+            </string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#64c8c8</string>
+            </dict>
           </dict>
-        </dict>
+        <!-- Functions -->
+          <dict>
+            <key>name</key>
+            <string>Python: Functions</string>
+            <key>scope</key>
+            <string>
+              , source.python meta.function.python punctuation.definition.parameters.begin.python,
+              , source.python meta.function-call.python meta.function-call.arguments.python meta.function-call.python,
+              , source.python meta.function.python punctuation.definition.parameters.end.python,
+            </string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#00e6e6</string>
+            </dict>
+          </dict>
+        <!-- Arguments -->
+          <dict>
+            <key>name</key>
+            <string>Python: Arguments</string>
+            <key>scope</key>
+            <string>
+              , source.python meta.function.python meta.function.parameters.python variable.parameter.function.python,
+              , source.python meta.function-call.python meta.function-call.arguments.python meta.function-call.python meta.function-call.arguments.python,
+              , source.python meta.function-call.python meta.function-call.arguments.python variable.parameter.function.python,
+            </string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#ffec90</string>
+            </dict>
+          </dict>
       <!-- End Python -->
       <!-- Ruby -->
-        <dict>
-          <key>name</key>
-          <string>Ruby: AtRules</string>
-          <key>scope</key>
-          <string>
-           , source.ruby variable.other.readwrite.instance.ruby punctuation.definition.variable.ruby,
-           , source.ruby variable.other.readwrite.class.ruby punctuation.definition.variable.ruby,
-           , source.ruby variable.other.readwrite.global.ruby punctuation.definition.variable.ruby,
-          </string>
-          <key>settings</key>
+        <!-- Arguments -->
           <dict>
-            <key>foreground</key>
-            <string>#00e6e6</string>
+            <key>name</key>
+            <string>Ruby: Arguments</string>
+            <key>scope</key>
+            <string>
+              , source.ruby meta.function.method.with-arguments.ruby variable.parameter.function.ruby,
+            </string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#ffec90</string>
+            </dict>
           </dict>
-        </dict>
-        <dict>
-          <key>name</key>
-          <string>Ruby: Variables</string>
-          <key>scope</key>
-          <string>
-            , source.ruby variable.other.readwrite.instance.ruby,
-            , source.ruby variable.other.readwrite.class.ruby,
-            , source.ruby variable.other.readwrite.global.ruby,
-          </string>
-          <key>settings</key>
+        <!-- Keywords -->
+        <!-- Constants -->
           <dict>
-            <key>foreground</key>
-            <string>#ffec90</string>
+            <key>name</key>
+            <string>Ruby: Constants</string>
+            <key>scope</key>
+            <string>
+              , source.ruby variable.language.ruby,
+              , source.ruby variable.other.constant.ruby,
+              , source.ruby string.quoted.double.ruby source.ruby.embedded.source variable.language.ruby,
+            </string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#B6509D</string>
+            </dict>
           </dict>
-        </dict>
-        <dict>
-          <key>name</key>
-          <string>Ruby: Numbers</string>
-          <key>scope</key>
-          <string>
-            , source.ruby string.quoted.double.ruby source.ruby.embedded.source constant.numeric.ruby,
-          </string>
-          <key>settings</key>
+        <!-- Variables -->
           <dict>
-            <key>foreground</key>
-            <string>#ffec90</string>
+            <key>name</key>
+            <string>Ruby: Variables</string>
+            <key>scope</key>
+            <string>
+              , source.ruby variable.other.readwrite.instance.ruby,
+              , source.ruby variable.other.readwrite.class.ruby,
+              , source.ruby variable.other.readwrite.global.ruby,
+            </string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#ffec90</string>
+            </dict>
           </dict>
-        </dict>
-        <dict>
-          <key>name</key>
-          <string>Ruby: Embedded Code</string>
-          <key>scope</key>
-          <string>
-            , source.ruby string.quoted.double.ruby source.ruby.embedded.source punctuation.section.embedded.ruby,
-          </string>
-          <key>settings</key>
+        <!-- AtRules -->
           <dict>
-            <key>foreground</key>
-            <string>#00e6e6</string>
+            <key>name</key>
+            <string>Ruby: AtRules</string>
+            <key>scope</key>
+            <string>
+             , source.ruby variable.other.readwrite.instance.ruby punctuation.definition.variable.ruby,
+             , source.ruby variable.other.readwrite.class.ruby punctuation.definition.variable.ruby,
+             , source.ruby variable.other.readwrite.global.ruby punctuation.definition.variable.ruby,
+            </string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#00e6e6</string>
+            </dict>
           </dict>
-        </dict>
-        <dict>
-          <key>name</key>
-          <string>Ruby: Regexp (Groups)</string>
-          <key>scope</key>
-          <string>
-            , source.ruby string.regexp.classic.ruby punctuation.definition.string.ruby,
-            , source.ruby string.regexp.classic.ruby string.regexp.group.ruby punctuation.definition.group.ruby,
-            , source.ruby string.regexp.classic.ruby string.regexp.character-class.ruby punctuation.definition.character-class.ruby,
-            , source.ruby string.regexp.mod-r.ruby punctuation.definition.string.ruby,
-            , source.ruby string.regexp.mod-r.ruby string.regexp.character-class.ruby punctuation.definition.character-class.ruby,
-            , source.ruby string.regexp.mod-r.ruby string.regexp.group.ruby punctuation.definition.group.ruby,
-          </string>
-          <key>settings</key>
+        <!-- Strings -->
+        <!-- Punctuation -->
+        <!-- Regexp -->
           <dict>
-            <key>foreground</key>
-            <string>#00e6e6</string>
+            <key>name</key>
+            <string>Ruby: Regexp (Groups)</string>
+            <key>scope</key>
+            <string>
+              , source.ruby string.regexp.classic.ruby punctuation.definition.string.ruby,
+              , source.ruby string.regexp.classic.ruby string.regexp.group.ruby punctuation.definition.group.ruby,
+              , source.ruby string.regexp.classic.ruby string.regexp.character-class.ruby punctuation.definition.character-class.ruby,
+              , source.ruby string.regexp.mod-r.ruby punctuation.definition.string.ruby,
+              , source.ruby string.regexp.mod-r.ruby string.regexp.character-class.ruby punctuation.definition.character-class.ruby,
+              , source.ruby string.regexp.mod-r.ruby string.regexp.group.ruby punctuation.definition.group.ruby,
+            </string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#00e6e6</string>
+            </dict>
           </dict>
-        </dict>
-        <dict>
-          <key>name</key>
-          <string>Ruby: Regexp (Characters)</string>
-          <key>scope</key>
-          <string>
-            , source.ruby string.regexp.classic.ruby string.regexp.character-class.ruby,
-            , source.ruby string.regexp.mod-r.ruby string.regexp.character-class.ruby,
-          </string>
-          <key>settings</key>
           <dict>
-            <key>foreground</key>
-            <string>#ffec90</string>
+            <key>name</key>
+            <string>Ruby: Regexp (Characters)</string>
+            <key>scope</key>
+            <string>
+              , source.ruby string.regexp.classic.ruby string.regexp.character-class.ruby,
+              , source.ruby string.regexp.mod-r.ruby string.regexp.character-class.ruby,
+            </string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#ffec90</string>
+            </dict>
           </dict>
-        </dict>
-        <dict>
-          <key>name</key>
-          <string>Ruby: Symbols</string>
-          <key>scope</key>
-          <string>
-            , source.ruby string.quoted.double.ruby source.ruby.embedded.source constant.other.symbol.ruby,
-          </string>
-          <key>settings</key>
+        <!-- Numbers -->
           <dict>
-            <key>foreground</key>
-            <string>#BE90E4</string>
+            <key>name</key>
+            <string>Ruby: Numbers</string>
+            <key>scope</key>
+            <string>
+              , source.ruby string.quoted.double.ruby source.ruby.embedded.source constant.numeric.ruby,
+            </string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#ffec90</string>
+            </dict>
           </dict>
-        </dict>
-        <dict>
-          <key>name</key>
-          <string>Ruby: Constants</string>
-          <key>scope</key>
-          <string>
-            , source.ruby variable.language.ruby,
-            , source.ruby variable.other.constant.ruby,
-            , source.ruby string.quoted.double.ruby source.ruby.embedded.source variable.language.ruby,
-          </string>
-          <key>settings</key>
+        <!-- Symbols -->
           <dict>
-            <key>foreground</key>
-            <string>#B6509D</string>
+            <key>name</key>
+            <string>Ruby: Symbols</string>
+            <key>scope</key>
+            <string>
+              , source.ruby string.quoted.double.ruby source.ruby.embedded.source constant.other.symbol.ruby,
+            </string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#BE90E4</string>
+            </dict>
           </dict>
-        </dict>
-        <dict>
-          <key>name</key>
-          <string>Ruby: Separators</string>
-          <key>scope</key>
-          <string>
-            , source.ruby punctuation.separator.other.ruby,
-          </string>
-          <key>settings</key>
+        <!-- Separators -->
           <dict>
-            <key>foreground</key>
-            <string>#00E6E6</string>
+            <key>name</key>
+            <string>Ruby: Separators</string>
+            <key>scope</key>
+            <string>
+              , source.ruby punctuation.separator.other.ruby,
+            </string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#00E6E6</string>
+            </dict>
           </dict>
-        </dict>
-        <dict>
-          <key>name</key>
-          <string>Ruby: Escaped Characters</string>
-          <key>scope</key>
-          <string>
-            , source.ruby string.quoted.double.ruby constant.character.escape.ruby,
-          </string>
-          <key>settings</key>
+        <!-- Embedded Code -->
           <dict>
-            <key>foreground</key>
-            <string>#00e6e6</string>
+            <key>name</key>
+            <string>Ruby: Embedded Code</string>
+            <key>scope</key>
+            <string>
+              , source.ruby string.quoted.double.ruby source.ruby.embedded.source punctuation.section.embedded.ruby,
+            </string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#00e6e6</string>
+            </dict>
           </dict>
-        </dict>
+        <!-- Escaped Characters -->
+          <dict>
+            <key>name</key>
+            <string>Ruby: Escaped Characters</string>
+            <key>scope</key>
+            <string>
+              , source.ruby string.quoted.double.ruby constant.character.escape.ruby,
+            </string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#00e6e6</string>
+            </dict>
+          </dict>
       <!-- End Ruby -->
     <!-- End Programming -->
 
@@ -1106,7 +1192,7 @@
             <key>settings</key>
             <dict>
               <key>foreground</key>
-              <string>#FFB700</string>
+              <string>#00e6e6</string>
             </dict>
           </dict>
           <dict>
@@ -1117,7 +1203,7 @@
             <key>settings</key>
             <dict>
               <key>foreground</key>
-              <string>#FFB700</string>
+              <string>#00e6e6</string>
             </dict>
           </dict>
         <!-- Punctuation -->
@@ -1129,7 +1215,7 @@
             <key>settings</key>
             <dict>
               <key>foreground</key>
-              <string>#B9BFFF</string>
+              <string>#b9bfff</string>
             </dict>
           </dict>
         <!-- Structure -->
@@ -1165,7 +1251,7 @@
             <key>settings</key>
             <dict>
               <key>foreground</key>
-              <string>#C5E400</string>
+              <string>#c5e400</string>
             </dict>
           </dict>
         <!-- 3 Deep -->
@@ -1189,7 +1275,7 @@
             <key>settings</key>
             <dict>
               <key>foreground</key>
-              <string>#E12977</string>
+              <string>#e12977</string>
             </dict>
           </dict>
         <!-- 5 Deep -->
@@ -1213,7 +1299,7 @@
             <key>settings</key>
             <dict>
               <key>foreground</key>
-              <string>#C5E400</string>
+              <string>#c5e400</string>
             </dict>
           </dict>
       <!-- End Json -->
@@ -1222,7 +1308,7 @@
     <!-- End Data Management -->
 	</array>
 	<key>uuid</key>
-	<string>D8D5E82E-3D5B-46B5-B38E-8C841C21347D</string>
+	<string>d8d5e82e-3d5b-46b5-b38e-8c841c21347d</string>
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
 	<key>author</key>
