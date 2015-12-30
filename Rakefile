@@ -36,6 +36,7 @@ namespace :git do
 
   desc "Commit Message for Repository"
   task :commit do
+    puts "Commit Message: "
     system "git commit"
   end
 
