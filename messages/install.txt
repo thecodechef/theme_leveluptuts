@@ -1,0 +1,65 @@
+
+|=============================================|
+|-Thank You for Downloading Theme LevelUpTuts-|
+|=============================================|
+
+
+Thank You for Downloading this Theme inspired by the
+colors of LevelUpTuts.com http://www.leveluptuts.com
+
+P.S Go over to LevelUpTuts now to see alot of great Tutorials for
+
+Sublime Text, Angular, Meteor, Sketch, & many more
+
+|============|
+|---Usage:---|
+|============|
+
+
+|-Activating:-|
+
+{
+  "color_scheme": "Packages/Theme - LevelUpTuts/LevelUpTuts.tmTheme",
+  "theme": "LevelUpTuts.sublime-theme"
+}
+
+|-Recommended Settings-|
+
+{
+  "bold_folder_labels": true,
+  "alwasys_show_minimap": true,
+  "draw_minimap_border": true,
+  "font_face": "Monaco", // http://github.com/todylu/monaco.ttf/
+  "font_size": 14,
+  "higlight_line": true,
+  "preview_on_click": false,
+  "trim_trailing_white_space_on_save": true
+}
+
+|==================|
+|---Customizing:---|
+|==================|
+
+{
+  "levelup_tabs_font_small"
+  "levelup_tabs_font_large"
+  "levelup_tabs_font_xlarge"
+
+  "levelup_tabs_small"
+  "levelup_tabs_large"
+  "levelup_tabs_xlarge"
+
+  "levelup_sidebar_font_small"
+  "levelup_sidebar_font_large"
+  "levelup_sidebar_font_xlarge"
+
+  "levelup_sidebar_tree_small"
+  "levelup_sidebar_tree_large"
+  "levelup_sidebar_tree_xlarge"
+
+  "levelup_scrollbar_small"
+  "levelup_scrollbar_large"
+  "levelup_scrollbar_xlarge"
+
+  "levelup_dirty_bottom_bar"
+}

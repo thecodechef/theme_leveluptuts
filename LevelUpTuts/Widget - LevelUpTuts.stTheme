@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>Jeremy Bolding</string>
+	<key>comment</key>
+	<string>LevelUpTuts</string>
+	<key>name</key>
+	<string>LevelUpTuts</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#bea4e4</string>
+				<key>caret</key>
+				<string>#c0c5ce</string>
+				<key>foreground</key>
+				<string>#6e5494</string>
+				<key>invisibles</key>
+				<string>#65737e</string>
+				<key>selection</key>
+				<string>#00e6e640</string>
+				<key>selectionBorder</key>
+				<string>#00e6e6</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
