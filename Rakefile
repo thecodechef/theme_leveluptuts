@@ -1,10 +1,14 @@
 require 'yaml'
 require 'json'
+require 'thor'
 
-@config = YAML.load_file(File.join(File.dirname(__FILE__), 'config.yml'))
-@pkg = JSON.load(File.join(File.dirname(__FILE__), 'package.json')) if File.exists?(File.join(File.dirname(__FILE__), 'package.json'))
+@config_file = File.join(File.dirname(__FILE__), 'config.yml')
+@pkg_file = File.join(File.dirname(__FILE__), 'package.json')
 
-if File.exists?(File.join(File.dirname(__FILE__), 'config.yml'))
+@config = YAML.load_file(@config_file)
+@pkg = JSON.load(@pkg_file) if File.exists?(@pkg_file)
+
+if File.exists?(@config_file)
   @version = @config[:version]
   @repo = @config[:repo]
 else
@@ -17,10 +21,6 @@ namespace :git do
   desc "Initiates a Empty Git Repository in Current Directory"
   task :init do
     system "git init"
-    system "touch README.md"
-    system "touch LICENSE.md"
-    system "touch CHANGLOG.md"
-    system "touch CONTRIBUTING.md"
   end
 
   desc "Gives current Status of Repository"
@@ -37,17 +37,34 @@ namespace :git do
   desc "Creates a .git* Files"
   task :files do
     puts "Created ./.gitignore"
-    sleep 1.2
-    puts "Created ./.gitconfig"
-    sleep 1.2
-    puts "Created ./.gitaliases"
     sleep 0.2
     system "touch .gitignore"
-    system "echo \".gitconfig\" >> .gitignore"
-    system "echo \".gitaliases\" >> .gitignore"
-    system "echo \".DS_Store\" >> .gitignore"
-    system "touch .gitconfig"
-    system "touch .gitaliases"
+  end
+
+  desc "Creates Markdown Files"
+  task :readme do
+    puts "Creating..."
+    sleep 3
+    unless File.exists?(File.join(File.dirname(__FILE__),'README.md'))
+      system "touch README.md"
+    else
+      puts "README.md Existed"
+    end
+    unless File.exists?(File.join(File.dirname(__FILE__),'LICENSE.md'))
+      system 'touch LICENSE.md'
+    else
+      puts "LICENSE.md Existed"
+    end
+    unless File.exists?(File.join(File.dirname(__FILE__),'CHANGELOG.md'))
+      system "touch CHANGELOG.md"
+    else
+      puts "CHANGELOG.md Existed"
+    end
+    unless File.exists?(File.join(File.dirname(__FILE__),'CONTRIBUTING.md'))
+      system "touch CONTRIBUTING.md"
+    else
+      puts "CONTRIBUTING.md Existed"
+    end
   end
 
   desc "Commit Message for Repository"

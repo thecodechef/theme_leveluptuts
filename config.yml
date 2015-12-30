@@ -1,2 +1,12 @@
+
+:project: theme_leveluptuts
+:description: This a Sublime Text theme inspired by the color_scheme of leveluptutorials.com
 :version: 0.0.3
+
+:authors:
+  -
+    :name: Jeremy Bolding
+    :email: cyberchefjay@gmail.com
+
+:homepage: http://github.com/thecodechef/theme_leveluptuts
 :repo: http://github.com/thecodechef/theme_leveluptuts.git
