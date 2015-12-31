@@ -1,7 +1,25 @@
-# Usage:
+# Theme - LevelUpTuts
 
+## Installing
 
-## Activating:
+Brief Description About Theme Goes Here.
+
+### Package Control
+
+  * Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on Linux/Windows or <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on a Mac
+  * Type in `Package Control:`
+  * Then go down to `Install Package` and press `Enter`
+  * And then type `Theme - LevelUpTuts` and press `Enter`
+
+### Manually
+
+  * Open a Terminal/CommandPrompt
+  * `cd` into Your Packages Directory
+    * Linux `cd ~/.config/sublime_text_3/Packages`
+  * Clone this Repo `git clone http://github.com/thecodechef/theme_leveluptuts.git Theme - LevelUpTuts`
+  * Restart Sublime Text
+
+### Activating:
 
 ```json
 {
@@ -9,14 +27,14 @@
   "theme": "LevelUpTuts.sublime-theme"
 }
 ```
-## Recommended Settings:
+### Recommended Settings:
 
 ```json
 {
   "bold_folder_labels": true,
   "alwasys_show_minimap": true,
   "draw_minimap_border": true,
-  "font_face": "Monaco", // http://github.com/todylu/monaco.ttf/
+  "font_face": "Monaco",
   "font_size": 14,
   "higlight_line": true,
   "preview_on_click": false,
@@ -24,7 +42,7 @@
 }
 ```
 
-## Customizing:
+### Customizing:
 
 ```json
 {
@@ -51,8 +69,11 @@
   "levelup_dirty_bottom_bar"
 }
 ```
+### Screenshots
 
-## License
+The Font used in the screenshots is [Monaco](http://github.com/todylu/monaco.ttf)
+
+### License
 
 The MIT License (MIT)
 

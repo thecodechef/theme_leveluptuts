@@ -1,6 +1,5 @@
 require 'yaml'
 require 'json'
-require 'thor'
 
 @config_file = File.join(File.dirname(__FILE__), 'config.yml')
 @pkg_file = File.join(File.dirname(__FILE__), 'package.json')
@@ -34,36 +33,15 @@ namespace :git do
     system "git status"
   end
 
-  desc "Creates a .git* Files"
+  desc "Creates Standard GitHub Files"
   task :files do
-    puts "Created ./.gitignore"
-    sleep 0.2
-    system "touch .gitignore"
-  end
-
-  desc "Creates Markdown Files"
-  task :readme do
-    puts "Creating..."
-    sleep 3
-    unless File.exists?(File.join(File.dirname(__FILE__),'README.md'))
-      system "touch README.md"
-    else
-      puts "README.md Existed"
-    end
-    unless File.exists?(File.join(File.dirname(__FILE__),'LICENSE.md'))
-      system 'touch LICENSE.md'
-    else
-      puts "LICENSE.md Existed"
-    end
-    unless File.exists?(File.join(File.dirname(__FILE__),'CHANGELOG.md'))
-      system "touch CHANGELOG.md"
-    else
-      puts "CHANGELOG.md Existed"
-    end
-    unless File.exists?(File.join(File.dirname(__FILE__),'CONTRIBUTING.md'))
-      system "touch CONTRIBUTING.md"
-    else
-      puts "CONTRIBUTING.md Existed"
+    files = %w{ .gitignore README.md LICENSE.md CHANGELOG.md CONTRIBUTING.md TODO.md }
+    files.each do |file|
+      unless File.exists?(File.join(File.dirname(__FILE__),"#{file}"))
+        system "touch #{file}"
+      else
+        puts "#{file} already exists."
+      end
     end
   end
 
