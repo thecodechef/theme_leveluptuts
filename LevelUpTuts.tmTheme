@@ -4,13 +4,13 @@
 <dict>
 	<key>gutterSettings</key>
 	<dict>
-		<key>background</key>
-		<string>#49483E</string>
-		<key>divider</key>
-		<string>#49483E</string>
-		<key>foreground</key>
-		<string>#75715E</string>
-	</dict>
+    <key>background</key>
+    <string>#49483e</string>
+    <key>divider</key>
+    <string>#49483e</string>
+    <key>foreground</key>
+    <string>#75715e</string>
+  </dict>
 	<key>name</key>
 	<string>LevelUpTuts</string>
 	<key>semanticClass</key>
@@ -27,11 +27,11 @@
   				<key>caret</key>
   				<string>#ffffff</string>
   				<key>foreground</key>
-  				<string>#BE90E4</string>
+  				<string>#be90e4</string>
   				<key>invisibles</key>
   				<string>#383838</string>
   				<key>lineHighlight</key>
-  				<string>#6E549430</string>
+  				<string>#6e549430</string>
   				<key>selection</key>
   				<string>#00e6e640</string>
   				<key>selectionBorder</key>
@@ -39,9 +39,9 @@
   				<key>minimapBorder</key>
   				<string>#00e6e6</string>
   				<key>activeGuide</key>
-  				<string>#00E6E6</string>
+  				<string>#00e6e6</string>
   				<key>stackGuide</key>
-  				<string>#BE90E4</string>
+  				<string>#be90e4</string>
   			</dict>
   		</dict>
 		<!-- End Settings -->
@@ -426,10 +426,18 @@
 		<!-- End GitGutter -->
 
     <!-- Markup Language -->
+      <!-- Handlebars -->
+      <!-- End Handlebars -->
       <!-- Html -->
       <!-- End Html -->
-      <!-- Xml -->
-      <!-- End Xml -->
+      <!-- Haml -->
+      <!-- End Haml -->
+      <!-- Erb -->
+      <!-- End Erb -->
+      <!-- Jade -->
+      <!-- End Jade-->
+      <!-- Liquid -->
+      <!-- End Liquid -->
       <!-- Markdown -->
         <!-- Emphasis -->
           <dict>
@@ -445,7 +453,22 @@
               <key>fontStyle</key>
               <string>italic underline</string>
               <key>foreground</key>
-              <string>#C5E400</string>
+              <string>#ffec90</string>
+            </dict>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>Markup: Emphasis (Underscores)</string>
+            <key>scope</key>
+            <string>
+              , meta.paragraph.markdown markup.italic.markdown punctuation.definition.italic.markdown,
+            </string>
+            <key>settings</key>
+            <dict>
+              <key>fontStyle</key>
+              <string>italic underline</string>
+              <key>foreground</key>
+              <string>#00e6e6</string>
             </dict>
           </dict>
           <dict>
@@ -461,7 +484,22 @@
               <key>fontStyle</key>
               <string>bold italic</string>
               <key>foreground</key>
-              <string>#aaaaaa</string>
+              <string>#ffec90</string>
+            </dict>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>Markup: StrongEmphasis (Underscores)</string>
+            <key>scope</key>
+            <string>
+              , meta.paragraph.markdown markup.bold_italic.markdown punctuation.definition.bold_italic.markdown,
+            </string>
+            <key>settings</key>
+            <dict>
+              <key>fontStyle</key>
+              <string>bold italic</string>
+              <key>foreground</key>
+              <string>#ffffff</string>
             </dict>
           </dict>
         <!-- Links -->
@@ -654,7 +692,7 @@
               <key>fontStyle</key>
               <string>bold</string>
               <key>foreground</key>
-              <string>#A7ABF7</string>
+              <string>#ffec90</string>
             </dict>
           </dict>
         <!-- Strikethrough -->
@@ -779,11 +817,14 @@
             <key>name</key>
             <string>Markdown: separator</string>
             <key>scope</key>
-            <string>meta.separator.markdown</string>
+            <string>
+              , meta.separator.markdown,
+              , meta.block-level.markdown meta.separator.markdown,
+            </string>
             <key>settings</key>
             <dict>
               <key>foreground</key>
-              <string>#555555</string>
+              <string>#ffec90</string>
             </dict>
           </dict>
         <!-- Blockquote -->
@@ -890,11 +931,21 @@
             </dict>
           </dict>
       <!-- End Markdown -->
+      <!-- Markdown Extended -->
+      <!-- End Markdown Extended -->
+      <!-- MultiMarkdown -->
+      <!-- End MultiMarkdown -->
+      <!-- Slim -->
+      <!-- End Slim -->
+      <!-- Xml -->
+      <!-- End Xml -->
     <!-- End Markup Language -->
 
     <!-- Stylesheets -->
       <!-- Css -->
       <!-- End Css -->
+      <!-- Css3 -->
+      <!-- End Css3 -->
       <!-- Less -->
       <!-- End Less -->
       <!-- PostCss -->
@@ -921,6 +972,14 @@
     <!-- End Scripts -->
 
     <!-- Programming -->
+      <!-- Bash -->
+      <!-- End Bash -->
+      <!-- C -->
+      <!-- End C -->
+      <!-- C++ -->
+      <!-- End C++ -->
+      <!-- Fish -->
+      <!-- End Fish -->
       <!-- Python -->
         <!-- Punctuation -->
           <dict>
@@ -1007,6 +1066,8 @@
             </dict>
           </dict>
       <!-- End Python -->
+      <!-- MagicPython -->
+      <!-- End MagicPython -->
       <!-- Ruby -->
         <!-- Arguments -->
           <dict>
@@ -1177,6 +1238,10 @@
             </dict>
           </dict>
       <!-- End Ruby -->
+      <!-- Swift -->
+      <!-- End Swift -->
+      <!-- Zsh -->
+      <!-- End Zsh -->
     <!-- End Programming -->
 
     <!-- Data Management -->
@@ -1188,7 +1253,9 @@
             <key>name</key>
             <string>JSON String</string>
             <key>scope</key>
-            <string>meta.structure.dictionary.json string.quoted.double.json</string>
+            <string>
+              , meta.structure.dictionary.json string.quoted.double.json,
+            </string>
             <key>settings</key>
             <dict>
               <key>foreground</key>
@@ -1199,7 +1266,9 @@
             <key>name</key>
             <string>JSON String</string>
             <key>scope</key>
-            <string>meta.structure.dictionary.value.json string.quoted.double.json</string>
+            <string>
+              , meta.structure.dictionary.value.json string.quoted.double.json,
+            </string>
             <key>settings</key>
             <dict>
               <key>foreground</key>
@@ -1211,11 +1280,16 @@
             <key>name</key>
             <string>JSON Punctuation</string>
             <key>scope</key>
-            <string>punctuation.definition.string.begin.json - meta.structure.dictionary.value.json, punctuation.definition.string.end.json - meta.structure.dictionary.value.json</string>
+            <string>
+              , punctuation.definition.string.begin.json - meta.structure.dictionary.value.json,
+              , punctuation.definition.string.end.json - meta.structure.dictionary.value.json,
+              , source.json meta.structure.dictionary.json punctuation.definition.dictionary.begin.json,
+              , source.json meta.structure.dictionary.json punctuation.definition.dictionary.end.json,
+            </string>
             <key>settings</key>
             <dict>
               <key>foreground</key>
-              <string>#b9bfff</string>
+              <string>#ffffff</string>
             </dict>
           </dict>
         <!-- Structure -->
@@ -1227,7 +1301,7 @@
             <key>settings</key>
             <dict>
               <key>foreground</key>
-              <string>#7877ff</string>
+              <string>#be90e4</string>
             </dict>
           </dict>
         <!-- 1 Deep -->

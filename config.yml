@@ -1,7 +1,7 @@
 
 :project: theme_leveluptuts
 :description: This a Sublime Text theme inspired by the color_scheme of leveluptutorials.com
-:version: 0.0.4
+:version: 0.0.5
 
 :authors:
   -
@@ -9,4 +9,6 @@
     :email: cyberchefjay@gmail.com
 
 :homepage: http://github.com/thecodechef/theme_leveluptuts
-:repo: http://github.com/thecodechef/theme_leveluptuts.git
+:repo:
+   :type: git
+   :url: http://github.com/thecodechef/theme_leveluptuts.git

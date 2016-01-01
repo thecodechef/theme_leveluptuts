@@ -7,12 +7,12 @@ require 'json'
 @config = YAML.load_file(@config_file)
 @pkg = JSON.load(@pkg_file) if File.exists?(@pkg_file)
 
-if File.exists?(@config_file)
+if File.exists?(@config_file) && !File.exists?(@pkg_file)
   @version = @config[:version]
-  @repo = @config[:repo]
-else
+  @repo = @config[:repo][:url]
+elsif File.exists?(@pkg_file) && !File.exists?(@config_file)
   @version = @pkg[:version]
-  @repo = @pkg[:repository]
+  @repo = @pkg[:repository][:url]
 end
 
 namespace :git do
@@ -25,6 +25,7 @@ namespace :git do
   desc "Gives current Status of Repository"
   task :status do
     system "git status"
+    system "git log --pretty=format:\"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]\" --decorate --date=short"
   end
 
   desc "Add Files to Repository Stage"

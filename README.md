@@ -1,8 +1,9 @@
 # Theme - LevelUpTuts
 
+Description Goes Here...
+
 ## Installing
 
-Brief Description About Theme Goes Here.
 
 ### Package Control
 
@@ -15,6 +16,8 @@ Brief Description About Theme Goes Here.
 
   * Open a Terminal/CommandPrompt
   * `cd` into Your Packages Directory
+    * Windows `cd %APPDATA%\Sublime Text 3\Packages`
+    * OSX `cd ~/Library/Application Support/Sublime Text 3/Packages`
     * Linux `cd ~/.config/sublime_text_3/Packages`
   * Clone this Repo `git clone http://github.com/thecodechef/theme_leveluptuts.git Theme - LevelUpTuts`
   * Restart Sublime Text
@@ -44,32 +47,41 @@ Brief Description About Theme Goes Here.
 
 ### Customizing:
 
+
+#### Tabs
+
 ```json
 {
   "levelup_tabs_font_small"
   "levelup_tabs_font_large"
   "levelup_tabs_font_xlarge"
-
   "levelup_tabs_small"
   "levelup_tabs_large"
   "levelup_tabs_xlarge"
+}
+```
+#### Sidebar
 
+```json
+{
   "levelup_sidebar_font_small"
   "levelup_sidebar_font_large"
   "levelup_sidebar_font_xlarge"
-
   "levelup_sidebar_tree_small"
   "levelup_sidebar_tree_large"
   "levelup_sidebar_tree_xlarge"
+}
+```
 
+#### Scrollbar
+```json
+{
   "levelup_scrollbar_small"
   "levelup_scrollbar_large"
   "levelup_scrollbar_xlarge"
-
-  "levelup_dirty_bottom_bar"
 }
 ```
-### Screenshots
+### Screenshots66
 
 The Font used in the screenshots is [Monaco](http://github.com/todylu/monaco.ttf)
 
