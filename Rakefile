@@ -7,7 +7,10 @@ require 'json'
 @config = YAML.load_file(@config_file)
 @pkg = JSON.load(@pkg_file) if File.exists?(@pkg_file)
 
-if File.exists?(@config_file) && !File.exists?(@pkg_file)
+if File.exists?(@config_file) && File.exists?(@pkg_file)
+  @version = @config[:version]
+  @repo = @config[:repo][:url]
+elsif File.exists?(@config_file) && !File.exists?(@pkg_file)
   @version = @config[:version]
   @repo = @config[:repo][:url]
 elsif File.exists?(@pkg_file) && !File.exists?(@config_file)
@@ -25,7 +28,7 @@ namespace :git do
   desc "Gives current Status of Repository"
   task :status do
     system "git status"
-    system "git log --pretty=format:\"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]\" --decorate --date=short"
+    system "git log --pretty=format:\"%C(yellow)%h \n%ad%Cred%d \n%Creset%s\n%Cblue[%cn]\" --decorate --date=short"
   end
 
   desc "Add Files to Repository Stage"
@@ -49,7 +52,8 @@ namespace :git do
   desc "Commit Message for Repository"
   task :commit do
     puts "Commit Message: "
-    system "git commit"
+    @msg = gets.chomp
+    eval "git commit -am '#{@msg}' "
   end
 
   desc "Pulls Repository from Origin"
@@ -66,7 +70,8 @@ namespace :git do
 
     desc "Pushs Repository to GitHub with Tags"
     task :push do
-      system "git tag -a v#{@version.to_s}"
+      @msg = gets.chomp
+      eval "git tag -a v#{@version.to_s} -m '#{@msg}' "
       system "git push -u origin master --tags"
     end
 

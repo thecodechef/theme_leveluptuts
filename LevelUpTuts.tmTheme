@@ -2,24 +2,31 @@
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>gutterSettings</key>
-	<dict>
-    <key>background</key>
-    <string>#49483e</string>
-    <key>divider</key>
-    <string>#49483e</string>
-    <key>foreground</key>
-    <string>#75715e</string>
-  </dict>
 	<key>name</key>
 	<string>LevelUpTuts</string>
+  <key>author</key>
+  <string>Jeremy Bolding</string>
+  <key>colorSpaceName</key>
+  <string>sRGB</string>
 	<key>semanticClass</key>
 	<string>theme.dark.level_up_tuts</string>
+  <key>uuid</key>
+  <string>d8d5e82e-3d5b-46b5-b38e-8c841c21347d</string>
+  <key>comment</key>
+  <string></string>
 	<key>settings</key>
 	<array>
-
     <!-- Settings -->
       <dict>
+        <key>gutterSettings</key>
+        <dict>
+          <key>background</key>
+          <string>#49483e</string>
+          <key>divider</key>
+          <string>#49483e</string>
+          <key>foreground</key>
+          <string>#be90e4</string>
+        </dict>
   			<key>settings</key>
   			<dict>
   				<key>background</key>
@@ -1381,13 +1388,5 @@
       <!-- End Yaml -->
     <!-- End Data Management -->
 	</array>
-	<key>uuid</key>
-	<string>d8d5e82e-3d5b-46b5-b38e-8c841c21347d</string>
-	<key>colorSpaceName</key>
-	<string>sRGB</string>
-	<key>author</key>
-	<string>Jeremy Bolding</string>
-	<key>comment</key>
-	<string></string>
 </dict>
 </plist>
