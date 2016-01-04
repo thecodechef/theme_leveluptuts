@@ -28,7 +28,6 @@ namespace :git do
   desc "Gives current Status of Repository"
   task :status do
     system "git status"
-    system "git log --pretty=format:\"%C(yellow)%h \n%ad%Cred%d \n%Creset%s\n%Cblue[%cn]\" --decorate --date=short"
   end
 
   desc "Add Files to Repository Stage"
@@ -52,8 +51,7 @@ namespace :git do
   desc "Commit Message for Repository"
   task :commit do
     puts "Commit Message: "
-    @msg = gets.chomp
-    eval "git commit -am '#{@msg}' "
+    exec "git commit"
   end
 
   desc "Pulls Repository from Origin"
@@ -70,8 +68,7 @@ namespace :git do
 
     desc "Pushs Repository to GitHub with Tags"
     task :push do
-      @msg = gets.chomp
-      eval "git tag -a v#{@version.to_s} -m '#{@msg}' "
+      exec "git tag -a v#{@version.to_s}"
       system "git push -u origin master --tags"
     end
 

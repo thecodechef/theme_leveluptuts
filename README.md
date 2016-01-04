@@ -1,6 +1,6 @@
 # Theme - LevelUpTuts
-
-Description Goes Here...
+[![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![GitHub](https://img.shields.io/github/tag/thecodechef/theme_leveluptuts.svg?style=flat-square)](https://github.com/thecodechef/theme_leveluptuts/tags)
 
 ## Installing
 
@@ -81,7 +81,16 @@ Description Goes Here...
   "levelup_scrollbar_xlarge"
 }
 ```
-### Screenshots66
+
+#### Dirty Bottom Bar
+
+```json
+{
+  "levelup_dirty_bottom_bar"
+}
+```
+
+### Screenshots
 
 The Font used in the screenshots is [Monaco](http://github.com/todylu/monaco.ttf)
 
@@ -89,7 +98,7 @@ The Font used in the screenshots is [Monaco](http://github.com/todylu/monaco.ttf
 
 The MIT License (MIT)
 
-Copyright (c) 2016 Jeremy Bolding
+Copyright (c) 2016 [Jeremy Bolding](http://github.com/thecodechef)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

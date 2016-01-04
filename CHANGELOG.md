@@ -1,5 +1,13 @@
 # Changlog
 
+## 0.0.6
+
+  * Added Badges to README
+
+## 0.0.5
+
+  * No Changes
+
 ## 0.0.4
 
   * Added README.md
