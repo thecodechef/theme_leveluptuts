@@ -1,0 +1,9 @@
+
+
+|===================|
+|---Update: 0.0.7---|
+|===================|
+
+  * Removed MagicPython Support
+  * Changed Color of caret in editor & widget
+  * Changed Color of Docstrings in Python

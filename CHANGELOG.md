@@ -1,5 +1,12 @@
 # Changlog
 
+## 0.0.7
+
+  * Removed MagicPython from TODO.md
+  * Removed MagicPythom from Scheme
+  * Changed Color of Docstrings for Python in Scheme
+  * Changed Color of caret in editor & widget
+
 ## 0.0.6
 
   * Added Badges to README

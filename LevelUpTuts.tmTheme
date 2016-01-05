@@ -32,7 +32,7 @@
   				<key>background</key>
   				<string>#321858</string>
   				<key>caret</key>
-  				<string>#ffffff</string>
+  				<string>#00e6e6</string>
   				<key>foreground</key>
   				<string>#be90e4</string>
   				<key>invisibles</key>
@@ -1001,6 +1001,9 @@
               , source.python meta.structure.list.python punctuation.definition.list.end.python,
               , source.python meta.function-call.python punctuation.definition.arguments.begin.python,
               , source.python meta.function-call.python punctuation.definition.arguments.end.python,
+              , source.python meta.class.python punctuation.section.class.begin.python,
+              , source.python meta.item-access.python punctuation.definition.arguments.begin.python,
+              , source.python meta.item-access.python punctuation.definition.arguments.end.python,
             </string>
             <key>settings</key>
             <dict>
@@ -1030,14 +1033,26 @@
             <string>Python: Document Block</string>
             <key>scope</key>
             <string>
-              , source.python string.quoted.double.block.python,
               , source.python string.quoted.double.block.python punctuation.definition.string.begin.python,
               , source.python string.quoted.double.block.python punctuation.definition.string.end.python,
             </string>
             <key>settings</key>
             <dict>
               <key>foreground</key>
-              <string>#64c8c8</string>
+              <string>#ffec90</string>
+            </dict>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>Python: Document Block</string>
+            <key>scope</key>
+            <string>
+              , source.python string.quoted.double.block.python,
+            </string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#ffec90</string>
             </dict>
           </dict>
         <!-- Functions -->
@@ -1047,8 +1062,10 @@
             <key>scope</key>
             <string>
               , source.python meta.function.python punctuation.definition.parameters.begin.python,
-              , source.python meta.function-call.python meta.function-call.arguments.python meta.function-call.python,
               , source.python meta.function.python punctuation.definition.parameters.end.python,
+              , source.python meta.function.python punctuation.definition.parameters.python,
+              , source.python meta.function.python meta.function.parameters.python,
+              , source.python meta.function-call.python meta.function-call.arguments.python meta.function-call.python,
             </string>
             <key>settings</key>
             <dict>
@@ -1073,8 +1090,6 @@
             </dict>
           </dict>
       <!-- End Python -->
-      <!-- MagicPython -->
-      <!-- End MagicPython -->
       <!-- Ruby -->
         <!-- Arguments -->
           <dict>

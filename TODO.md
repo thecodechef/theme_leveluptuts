@@ -44,7 +44,6 @@
     * C
     * C++
     * Fish
-    * MagicPython
     * Objective-C
     * Perl
     * Swift
