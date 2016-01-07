@@ -34,7 +34,7 @@
 ![Screenshot: Html](./screenshots/Css3.png)
 
 #### Javascript
-![Screenshot: Html](./screenshots/Html.png)
+![Screenshot: Html](./screenshots/Javascript.png)
 
 The Font used in the screenshots is [Monaco](http://github.com/todylu/monaco.ttf)
 
