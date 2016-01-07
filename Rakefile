@@ -7,10 +7,7 @@ require 'json'
 @config = YAML.load_file(@config_file)
 @pkg = JSON.load(@pkg_file) if File.exists?(@pkg_file)
 
-if File.exists?(@config_file) && File.exists?(@pkg_file)
-  @version = @config[:version]
-  @repo = @config[:repo][:url]
-elsif File.exists?(@config_file) && !File.exists?(@pkg_file)
+if File.exists?(@config_file) && !File.exists?(@pkg_file)
   @version = @config[:version]
   @repo = @config[:repo][:url]
 elsif File.exists?(@pkg_file) && !File.exists?(@config_file)
@@ -50,8 +47,7 @@ namespace :git do
 
   desc "Commit Message for Repository"
   task :commit do
-    puts "Commit Message: "
-    exec "git commit"
+    system "git commit"
   end
 
   desc "Pulls Repository from Origin"
@@ -68,7 +64,7 @@ namespace :git do
 
     desc "Pushs Repository to GitHub with Tags"
     task :push do
-      exec "git tag -a v#{@version.to_s}"
+      system "git tag -a v#{@version.to_s}"
       system "git push -u origin master --tags"
     end
 

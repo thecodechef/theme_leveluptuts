@@ -1129,18 +1129,18 @@
     {
         "class": "tabset_control",
         "settings": ["levelup_tabs_large"],
-        "tab_height": 34
+        "tab_height": 38
     },
     {
         "class": "tabset_control",
         "settings": ["levelup_tabs_xlarge"],
-        "tab_height": 38
+        "tab_height": 48
     },
   // TAB FONT SIZE
     {
       "class": "tab_label",
       "settings": ["levelup_tabs_font_small"],
-      "font.size": 10.0
+      "font.size": 8.0
     },
     {
       "class": "tab_label",
@@ -1156,7 +1156,7 @@
     {
       "class": "sidebar_label",
       "settings": ["levelup_sidebar_font_small"],
-      "font.size": 10.0
+      "font.size": 8.0
     },
     {
       "class": "sidebar_label",

@@ -436,6 +436,60 @@
       <!-- Handlebars -->
       <!-- End Handlebars -->
       <!-- Html -->
+        <dict>
+            <key>name</key>
+            <string>Html: Tags</string>
+            <key>scope</key>
+            <string>
+              , text.html.basic meta.tag.sgml.html punctuation.definition.tag.html,
+              , text.html.basic meta.tag.structure.any.html punctuation.definition.tag.begin.html,
+              , text.html.basic meta.tag.structure.any.html punctuation.definition.tag.end.html,
+              , text.html.basic meta.tag.inline.any.html punctuation.definition.tag.begin.html,
+              , text.html.basic meta.tag.inline.any.html punctuation.definition.tag.end.html,
+              , text.html.basic meta.tag.block.any.html punctuation.definition.tag.begin.html,
+              , text.html.basic meta.tag.block.any.html punctuation.definition.tag.end.html,
+              , text.html.basic meta.tag.any.html punctuation.definition.tag.begin.html,
+              , text.html.basic meta.tag.any.html punctuation.definition.tag.end.html,
+              , text.html.basic meta.tag.other.html punctuation.definition.tag.begin.html,
+              , text.html.basic meta.tag.other.html punctuation.definition.tag.end.html,
+              , text.html.basic source.js.embedded.html punctuation.definition.tag.begin.html,
+              , text.html.basic source.js.embedded.html punctuation.definition.tag.end.html,
+              , text.html.basic source.js.embedded.html punctuation.definition.tag.html,
+              , text.html.basic source.css.embedded.html punctuation.definition.tag.begin.html,
+              , text.html.basic source.css.embedded.html punctuation.definition.tag.end.html,
+              , text.html.basic source.css.embedded.html punctuation.definition.tag.html,
+            </string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#ffffff</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Html: Tag Attributes</string>
+            <key>scope</key>
+            <string>
+              , text.html.basic meta.tag.structure.any.html entity.other.attribute-name.html,
+              , text.html.basic meta.tag.inline.any.html entity.other.attribute-name.html,
+              , text.html.basic meta.tag.block.any.html entity.other.attribute-name.html,
+              , text.html.basic meta.tag.any.html entity.other.attribute-name.html,
+              , text.html.basic meta.tag.other.html entity.other.attribute-name.html,
+              , text.html.basic meta.tag.inline.any.html meta.attribute-with-value.id.html entity.other.attribute-name.id.html,
+              , text.html.basic meta.tag.block.any.html meta.attribute-with-value.id.html entity.other.attribute-name.id.html,
+              , text.html.basic meta.tag.any.html meta.attribute-with-value.id.html entity.other.attribute-name.id.html,
+              , text.html.basic meta.tag.other.html meta.attribute-with-value.id.html entity.other.attribute-name.id.html,
+              , text.html.basic source.js.embedded.html entity.other.attribute-name.html,
+              , text.html.basic source.js.embedded.html meta.attribute-with-value.id.html entity.other.attribute-name.id.html,
+              , text.html.basic source.css.embedded.html entity.other.attribute-name.html,
+              , text.html.basic source.css.embedded.html meta.attribute-with-value.id.html entity.other.attribute-name.id.html,
+            </string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#ffec90</string>
+            </dict>
+        </dict>
       <!-- End Html -->
       <!-- Haml -->
       <!-- End Haml -->
@@ -950,9 +1004,139 @@
 
     <!-- Stylesheets -->
       <!-- Css -->
+        <dict>
+          <key>name</key>
+          <string>Css: Operators</string>
+          <key>scope</key>
+          <string>
+            , source.css meta.selector.css keyword.operator.css.
+            , source.css meta.selector.css keyword.operator.attribute.css,
+            , source.css meta.selector.css keyword.operator.selector-combinator.css,
+          </string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#ff68ff</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Css: AtRules</string>
+          <key>scope</key>
+          <string>
+            , source.css meta.at-rule.keyframes.css keyword.control.at-rule.keyframes.css,
+            , source.css meta.at-rule.import.css keyword.control.at-rule.import.css,
+            , source.css meta.at-rule.media.css keyword.control.at-rule.media.css,
+          </string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#ff68ff</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Css: Selectors</string>
+          <key>scope</key>
+          <string>
+            , source.css meta.selector.css entity.name.tag.css,
+            , source.css meta.selector.css entity.other.attribute-name.id.css,
+            , source.css meta.selector.css entity.other.attribute-name.class.css,
+          </string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#ffec90</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Css: Selectors (Punctuation)</string>
+          <key>scope</key>
+          <string>
+            , source.css meta.selector.css,
+            , source.css meta.property-list.css punctuation.section.property-list.css,
+            , source.css meta.property-list.css meta.property-value.css punctuation.separator.key-value.css,
+            , source.css meta.property-list.css meta.property-value.css punctuation.terminator.rule.css,
+            , source.css meta.at-rule.media.css punctuation.separator.key-value.css,
+            , source.css meta.at-rule.media.css meta.media-feature.css,
+            , source.css meta.at-rule.media.css punctuation.section.media-feature.css,
+            , source.css meta.at-rule.media.css,
+            , source.css punctuation.section.property-list.css,
+            , source.css,
+            , source.css meta.property-list.css meta.value.css punctuation.separator.key-value.css,
+            , source.css meta.property-list.css meta.value.css punctuation.terminator.rule.css,
+          </string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#ffffff</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Css: Property Names</string>
+          <key>scope</key>
+          <string>
+            , source.css meta.selector.css entity.other.attribute-name.css,
+            , source.css meta.at-rule.media.css meta.media-feature.css support.constant.property-value.css,
+            , source.css meta.property-list.css meta.property-name.css support.type.property-name.css,
+            , source.css meta.at-rule.media.css support.type.property-name.media.css,
+            , source.css meta.at-rule.keyframes.css string.unquoted.identifier.css,
+          </string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#00e6e6</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Css: Property Arguments</string>
+          <key>scope</key>
+          <string>
+            , source.css meta.property-list.css meta.value.css support.constant.property-value.css,
+            , source.css meta.property-list.css meta.property-value.css support.constant.property-value.css,
+          </string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#00ffa0</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Css: Numbers</string>
+          <key>scope</key>
+          <string>
+            , source.css meta.at-rule.media.css meta.media-feature.css constant.numeric.css,
+            , source.css meta.property-list.css meta.value.css constant.numeric.css,
+            , source.css meta.property-list.css meta.property-value.css constant.numeric.css,
+            , source.css meta.at-rule.media.css constant.numeric.css,
+          </string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#ff68ff</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Css: Numbers (Units)</string>
+          <key>scope</key>
+          <string>
+            , source.css meta.property-list.css meta.value.css keyword.other.unit.css,
+            , source.css meta.at-rule.media.css meta.media-feature.css keyword.other.unit.css,
+            , source.css meta.property-list.css meta.property-value.css constant.numeric.css keyword.other.unit.css,
+            , source.css meta.at-rule.media.css constant.numeric.css keyword.other.unit.css,
+          </string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#00ffa0</string>
+          </dict>
+        </dict>
       <!-- End Css -->
-      <!-- Css3 -->
-      <!-- End Css3 -->
       <!-- Less -->
       <!-- End Less -->
       <!-- PostCss -->
@@ -967,6 +1151,135 @@
 
     <!-- Scripts -->
       <!-- Javascript -->
+        <dict>
+          <key>name</key>
+          <string>Javascript: Keywords</string>
+          <key>scope</key>
+          <string>
+            , source.js keyword.control.js,
+          </string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#00ffa0</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Javascript: Numbers</string>
+          <key>scope</key>
+          <string>
+            , source.js constant.numeric.js,
+          </string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#ffec90</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Javascript: Numbers (Units)</string>
+          <key>scope</key>
+          <string>
+            , source.js constant.numeric.other.units.js,
+          </string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#00e6e6</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Javascript: Arguments</string>
+          <key>scope</key>
+          <string>
+            , source.js support.function.js,
+            , source.js support.constant.js,
+            , source.js support.constant.dom.js,
+            , source.js meta.function.js entity.name.function.js,
+            , source.js meta.function.js variable.parameter.function.js,
+          </string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#ffec90</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Javascript: Strings</string>
+          <key>scope</key>
+          <string>
+            , source.js string.quoted.double.js,
+          </string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#00e6e6</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Javascript: Strings (Escaped)</string>
+          <key>scope</key>
+          <string>
+            , source.js string.quoted.double.js constant.character.escape.js,
+          </string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#ff68ff</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Javascript: Operators</string>
+          <key>scope</key>
+          <string>
+            , source.js keyword.operator.js,
+          </string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#ff68ff</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Javascript: Storage</string>
+          <key>scope</key>
+          <string>
+            , source.js storage.type.js,
+            , source.js meta.function.js storage.type.function.js,
+          </string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#00ffa0</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>name</key>
+          <string>Javascript: Punctuation</string>
+          <key>scope</key>
+          <string>
+            , source.js meta.delimiter.method.period.js,
+            , source.js punctuation.terminator.statement.js,
+            , source.js meta.brace.round.js,
+            , source.js meta.brace.curly.js,
+            , source.js meta.brace.square.js,
+            , source.js meta.delimiter.object.comma.js,
+            , source.js meta.function.js punctuation.definition.parameters.begin.js,
+            , source.js meta.function.js punctuation.definition.parameters.end.js,
+          </string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#ffffff</string>
+          </dict>
+        </dict>
       <!-- End Javascript -->
       <!-- Coffeescript -->
       <!-- End Coffeescript -->

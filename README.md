@@ -22,6 +22,22 @@
   * Clone this Repo `git clone http://github.com/thecodechef/theme_leveluptuts.git Theme - LevelUpTuts`
   * Restart Sublime Text
 
+### Screenshots
+
+#### Html
+![Screenshot: Html](./screenshots/Html.png)
+
+#### Css
+![Screenshot: Html](./screenshots/Css.png)
+
+#### Css3
+![Screenshot: Html](./screenshots/Css3.png)
+
+#### Javascript
+![Screenshot: Html](./screenshots/Html.png)
+
+The Font used in the screenshots is [Monaco](http://github.com/todylu/monaco.ttf)
+
 ### Activating:
 
 ```json
@@ -90,9 +106,7 @@
 }
 ```
 
-### Screenshots
 
-The Font used in the screenshots is [Monaco](http://github.com/todylu/monaco.ttf)
 
 ### License
 

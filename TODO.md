@@ -3,16 +3,12 @@
 
 ## Repo
 
-  * Add Screeshots
-  * Add Sample Code for Examples
-
 ## Theme
 
 
 ## Scheme
 
   * Add Custom Markup Language Styles for:
-    * Html
     * Xml
     * Slim
     * Jade
@@ -24,8 +20,6 @@
     * Liquid
 
   * Add Custom Stylesheet Styles for:
-    * Css
-    * Css3
     * Less
     * PostCss
     * Sass
@@ -33,7 +27,6 @@
     * Stylus
 
   * Add Custom Script Styles for:
-    * Javascript
     * Coffeescript
     * Livescript
     * Typescript
